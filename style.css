@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(-45deg, #e79379, #c47e99, #23a6d5, #67beaa);
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
+  height: 100vh;
+  font-family: "Noto Sans", sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: rgb(48, 60, 60);
+  border-bottom: solid 3px;
+}
+
+h2 {
+  border-bottom: solid 2px;
+  width: 200px;
+  margin-bottom: 50px;
+  border-color: #434d44;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 100px 50px;
+}
+
+input {
+  background-color: rgb(161, 226, 178);
+  margin: 50px;
+  height: 30px;
+  width: 300px;
+}
+
+button {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 21px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px rgb(194, 159, 159);
+}
+
+button:hover {
+  background-color: #434d44;
+}
+
+ul {
+  border: solid 2px;
+  border-color: #474c49;
+}
